@@ -1,0 +1,44 @@
+* {
+    color: silver;
+    font-style: normal;
+}
+
+h1{
+    color:blueviolet ;
+}
+p{
+    color: greenyellow;
+    size: 17px;
+}
+
+.clase1 {
+    color: purple;
+}
+
+
+#idtitulo {
+    color: brown;
+    font-style: oblique;
+}
+
+
+
+a[href]{
+    color: greenyellow;
+}
+
+a[href*=".ec"]{
+    color: blue;
+}
+
+label[for*="Nombre"]{
+    color: palevioletred;
+}
+
+/*
+label:hover{
+    color: yellowgreen;
+    background-color: aqua;
+    font-size: 50px;
+    text-transform: uppercase; 
+}*/
