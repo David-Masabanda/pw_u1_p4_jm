@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David</title>
 
-    <!-- 1.Selector Universal-->
+    
     <style>
+        /* 1.Selector Universal*/
         * {
             color: silver;
             font-style: normal;
         }
         
+        /* 2.Selector Tipo de elemento*/
         h1{
             color:blueviolet ;
         }
@@ -22,18 +24,18 @@
             size: 17px;
         }
 
+        /* 3.Selector Clase*/
         .clase1 {
             color: purple;
         }
 
-
+        /* 4.Selector ID*/
         #idtitulo {
             color: brown;
             font-style: oblique;
         }
 
-
-
+        /* 5.Selector Por Atributo*/
         a[href]{
             color: greenyellow;
         }
@@ -42,11 +44,12 @@
             color: blue;
         }
 
+        
         label[for*="Nombre"]{
             color: palevioletred;
         }
 
-        /*
+        /* 6.Selector Pseudo-Clase
         label:hover{
             color: yellowgreen;
             background-color: aqua;
