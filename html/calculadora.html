@@ -5,6 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+
+        function sumar(num1, num2){
+            return num1+num2;
+
+        }
+        function restar(num1, num2){
+            return num1-num2;
+
+        }
+        function multiplicar(num1, num2){
+            return num1*num2;
+
+        }
+        function dividir(num1, num2){
+            return num1/num2;
+
+        }
+
+
+        function sumarNumeros(){
+            var numero1=  parseInt( document.getElementById('idNumero1').value );
+            var numero2=  parseInt( document.getElementById('idNumero2').value );
+            document.getElementById('labelResultado').innerHTML = 
+            'Resultado: ' + sumar(numero1,numero2);
+        }
+
+
+        function restarNumeros(){
+            var numero1=  parseInt( document.getElementById('idNumero1').value );
+            var numero2=  parseInt( document.getElementById('idNumero2').value );
+            document.getElementById('labelResultado').innerHTML = 
+            'Resultado: ' + restar(numero1,numero2);
+        }
+
+        function multiplicarNumeros(){
+            var numero1=  parseInt( document.getElementById('idNumero1').value );
+            var numero2=  parseInt( document.getElementById('idNumero2').value );
+            document.getElementById('labelResultado').innerHTML = 
+            'Resultado: ' + multiplicar(numero1,numero2);
+        }
+        function dividirNumeros(){
+            var numero1=  convertir('idNumero1')
+            var numero2=  convertir('idNumero2')
+            document.getElementById('labelResultado').innerHTML = 
+            'Resultado: ' + dividir(numero1,numero2);
+        }
+
+        function convertir(idCampo){
+            return parseInt(document.getElementById(idCampo).value);
+        }
+    </script>
 </head>
 <body>
     <header></header>
@@ -16,10 +68,13 @@
         <label for="idNumero2">Numero 2</label>
         <input id="idNumero2" type="number">
 
-        <button onclick="document.getElementById('labelResultado').innerHTML='Cambio texto'">Sumar</button>
-        <button>Restar</button>
-        <button>Multiplicar</button>
-        <button>Dividir</button>
+        <button onclick="document.getElementById('labelResultado').style.backgroundColor='red'">JS Online</button>
+        <button onclick="document.getElementById('labelResultado').style.backgroundColor='blue'">JS Online 2</button>
+
+        <button onclick="sumarNumeros()">Sumar</button>
+        <button onclick="restarNumeros()">Restar</button>
+        <button onclick="multiplicarNumeros()">Multiplicar</button>
+        <button onclick="dividirNumeros()">Dividir</button>
 
         <label id="labelResultado" for="">Resultado:</label>
 
