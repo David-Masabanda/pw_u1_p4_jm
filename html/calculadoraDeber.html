@@ -13,34 +13,38 @@
     </script>
 </head>
 <body>
-    <header></header>
-    <nav></nav>
-    <section>
-        <label for="idCalculadora">Calculadora</label>
 
-        <button class="fila1" onclick="num(1)">1</button>
-        <button class="fila1" onclick="num(2)">2</button>
-        <button class="fila1" onclick="num(3)">3</button>
-        <button class="fila2" onclick="num(4)">4</button>
-        <button class="fila2" onclick="num(5)">5</button>
-        <button class="fila2" onclick="num(6)">6</button>
-        <button class="fila3" onclick="num(7)">7</button>
-        <button class="fila3" onclick="num(8)">8</button>
-        <button class="fila3" onclick="num(9)">9</button>
-        <button class="fila4" onclick="num(0)">0</button>
+    <div class="calculadora">
+        <label for="">Calculadora</label>
+        <input class="pantalla" id="resultado" type="number">
 
+        <div class="botones">
+          
+          <button onclick="num(7)">7</button>
+          <button onclick="num(8)">8</button>
+          <button onclick="num(9)">9</button>
 
-        <button onclick="suma()">+</button>
-        <button onclick="resta()">-</button>
-        <button onclick="multiplicacion()">*</button>
-        <button onclick="division()">/</button>
+          <button class="operaciones" onclick="op((a,b)=>a+b)">+</button>
 
-        <button onclick="insertarElemento()">=</button>
-  
-        <label id="labelResultado" for="">Resultado:</label>
-        <input id="resultado" type="number">
+          <button onclick="num(4)">4</button>
+          <button onclick="num(5)">5</button>
+          <button onclick="num(6)">6</button>
 
-    </section>
-    <footer></footer>
+          <button class="operaciones" onclick="op((a,b)=>a-b)">-</button>
+
+          <button onclick="num(1)">1</button>
+          <button onclick="num(2)">2</button>
+          <button onclick="num(3)">3</button>
+
+          <button class="operaciones" onclick="op((a,b)=>a*b)">*</button>
+
+          <button onclick="num(0)">0</button>
+          <button class="limpiar" onclick="resetear()">AC</button>
+          <button class="igual" onclick="igual()">=</button>
+
+          <button class="operaciones" onclick="op((a,b)=>a/b)">/</button>
+        </div>
+      </div>
+
 </body>
 </html>
