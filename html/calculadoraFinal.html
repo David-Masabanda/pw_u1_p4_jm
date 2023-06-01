@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Externa</title>
+    <link rel="stylesheet" href="../css/calculadoraFinal.css">
+    <script src="../js/calculadoraFinal.js">
+      
+       
+    </script>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div class="container">
+            
+        
+
+            <div class="Calculadora">
+                <label class="palabra" for="">Calculadora</label>
+                <input class="pantalla" id="resultado" type="number">
+        
+                <button onclick="num(7)">7</button>
+                <button onclick="num(8)">8</button>
+                <button onclick="num(9)">9</button>
+      
+                <button class="operaciones" onclick="op((a,b)=>a+b)">+</button>
+      
+                <button onclick="num(4)">4</button>
+                <button onclick="num(5)">5</button>
+                <button onclick="num(6)">6</button>
+      
+                <button class="operaciones" onclick="op((a,b)=>a-b)">-</button>
+      
+                <button onclick="num(1)">1</button>
+                <button onclick="num(2)">2</button>
+                <button onclick="num(3)">3</button>
+      
+                <button class="operaciones" onclick="op((a,b)=>a*b)">*</button>
+      
+                <button class="cero" onclick="num(0)">0</button>
+              
+                <button class="igual" onclick="igual()">=</button>
+      
+                <button class="operaciones" onclick="op((a,b)=>a/b)">/</button>
+
+            </div>
+        </div>
+
+    </section>
+    <footer></footer>
+</body>
+</html>
